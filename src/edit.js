@@ -13,6 +13,7 @@ export default function Edit({ attributes, setAttributes }) {
 	// Handle changes in the inspector controls
 	const onToggleShow = (value) => {
 		setAttributes({ show: value });
+		setAttributes({ hideAfterDateTime: '' });
 	};
 
 	const onDateTimeChange = (value) => {
@@ -43,19 +44,21 @@ export default function Edit({ attributes, setAttributes }) {
 						checked={show}
 						onChange={onToggleShow}
 					/>
-					<ToggleControl
-						label={__('Automatic Expiration', 'apx-announcement')}
-						checked={useExpiryDate}
-						onChange={onToggleUseExpiryDate}
-					/>
-					{useExpiryDate && (
-						<DateTimePicker
-							label={__('Hide After Date', 'apx-announcement')}
-							currentDate={hideAfterDateTime}
-							onChange={onDateTimeChange}
-							is12Hour={false}
+					{show && <>
+						<ToggleControl
+							label={__('Automatic Expiration', 'apx-announcement')}
+							checked={useExpiryDate}
+							onChange={onToggleUseExpiryDate}
 						/>
-					)}
+						{useExpiryDate && (
+							<DateTimePicker
+								label={__('Hide After Date', 'apx-announcement')}
+								currentDate={hideAfterDateTime}
+								onChange={onDateTimeChange}
+								is12Hour={false}
+							/>
+						)}
+					</>}
 				</PanelBody>
 			</InspectorControls>
 			<div className={isHiddenClass}>

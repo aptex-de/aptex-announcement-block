@@ -48,6 +48,9 @@ function Edit({
     setAttributes({
       show: value
     });
+    setAttributes({
+      hideAfterDateTime: ''
+    });
   };
   const onDateTimeChange = value => {
     setAttributes({
@@ -81,15 +84,17 @@ function Edit({
           label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Announcement', 'apx-announcement'),
           checked: show,
           onChange: onToggleShow
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Automatic Expiration', 'apx-announcement'),
-          checked: useExpiryDate,
-          onChange: onToggleUseExpiryDate
-        }), useExpiryDate && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.DateTimePicker, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Hide After Date', 'apx-announcement'),
-          currentDate: hideAfterDateTime,
-          onChange: onDateTimeChange,
-          is12Hour: false
+        }), show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Automatic Expiration', 'apx-announcement'),
+            checked: useExpiryDate,
+            onChange: onToggleUseExpiryDate
+          }), useExpiryDate && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.DateTimePicker, {
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Hide After Date', 'apx-announcement'),
+            currentDate: hideAfterDateTime,
+            onChange: onDateTimeChange,
+            is12Hour: false
+          })]
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
