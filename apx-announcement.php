@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name:       Announcement
  * Plugin URI:        aptex.de
@@ -15,7 +16,7 @@
  * @package Aptex
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (! defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
@@ -26,21 +27,25 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function apx_announcement_block_init() {
-	register_block_type( __DIR__ . '/build' );
+function apx_announcement_block_init()
+{
+	register_block_type(__DIR__ . '/build');
 }
-add_action( 'init', 'apx_announcement_block_init' );
+add_action('init', 'apx_announcement_block_init');
 
 add_filter('load_script_translation_file', function (string $file, string $handle, string $domain) {
-	if ( strpos( $handle, 'apx-announcement' ) !== false && 'apx-announcement' === $domain ) {
-		$file = str_replace( WP_LANG_DIR . '/plugins', plugin_dir_path( __FILE__ ) . 'languages', $file );
+	if (strpos($handle, 'apx-announcement') !== false && 'apx-announcement' === $domain) {
+		$file = str_replace(WP_LANG_DIR . '/plugins', plugin_dir_path(__FILE__) . 'languages', $file);
 	}
 	return $file;
 }, 10, 3);
 
-apx_load_plugin_textdomain(
-	'apx-announcement',
-	false,
-	plugin_basename(__FILE__) . '/languages/'
-);
-add_action( 'plugins_loaded', 'apx_load_plugin_textdomain' );
+function apx_load_plugin_textdomain()
+{
+	load_plugin_textdomain(
+		'apx-announcement',
+		false,
+		plugin_basename(__FILE__) . '/languages/'
+	);
+}
+add_action('plugins_loaded', 'apx_load_plugin_textdomain');
