@@ -14,6 +14,7 @@ export default function Edit({ attributes, setAttributes }) {
 	const onToggleShow = (value) => {
 		setAttributes({ show: value });
 		setAttributes({ hideAfterDateTime: '' });
+		setAttributes({ useExpiryDate: false });
 	};
 
 	const onDateTimeChange = (value) => {

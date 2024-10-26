@@ -51,6 +51,9 @@ function Edit({
     setAttributes({
       hideAfterDateTime: ''
     });
+    setAttributes({
+      useExpiryDate: false
+    });
   };
   const onDateTimeChange = value => {
     setAttributes({
