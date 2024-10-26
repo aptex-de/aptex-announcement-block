@@ -36,7 +36,6 @@ add_action('init', 'apx_announcement_block_init');
 add_filter('load_script_translation_file', function (string $file, string $handle, string $domain) {
 	if (strpos($handle, 'apx-announcement') !== false && 'apx-announcement' === $domain) {
 		$file = str_replace(WP_LANG_DIR . '/plugins', plugin_dir_path(__FILE__) . 'languages', $file);
-		var_dump($file);
 	}
 	return $file;
 }, 10, 3);
