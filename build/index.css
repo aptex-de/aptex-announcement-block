@@ -1,1 +1,37 @@
-.wp-block-aptex-apx-announcement{background-color:#d3e9ff;border-radius:5px;color:#000;padding:20px}
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+.wp-block-aptex-apx-announcement {
+  background-color: #d3e9ff;
+  color: #000;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.apx-announcement-is-hidden {
+  position: relative;
+  border: 1px dashed #999;
+  border-radius: 0.5rem;
+}
+.apx-announcement-is-hidden .wp-block-aptex-apx-announcement {
+  opacity: 0.4;
+  filter: grayscale(80%);
+}
+.apx-announcement-is-hidden .apx-disabled {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1;
+  background: #d3e9ff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+.apx-announcement-is-hidden .apx-disabled .apx-icon--disabled {
+  height: 3rem;
+}
+
+/*# sourceMappingURL=index.css.map*/

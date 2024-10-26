@@ -1,0 +1,1 @@
+{"version":3,"file":"./style-index.css","mappings":";;;AAAA;EACC;EACA;EACA;EACA;AACD,C","sources":["webpack://apx-announcement/./src/style.scss"],"sourcesContent":[".wp-block-aptex-apx-announcement {\n\tbackground-color: #d3e9ff; \n\tcolor: #000;\n\tpadding: 20px;\n\tborder-radius: 5px;\n}\n"],"names":[],"sourceRoot":""}

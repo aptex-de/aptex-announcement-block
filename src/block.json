@@ -47,9 +47,9 @@
 		}
 	},
 	"attributes": {
-		"hide": {
+		"show": {
 			"type": "boolean",
-			"default": false
+			"default": true
 		},
 		"hideAfterDateTime": {
 			"type": "string",
