@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Plugin Name:       Announcement
- * Plugin URI:        aptex.de
+ * Plugin Name:       Announcement Block
+ * Plugin URI:        https://aptex.de
  * Description:       Publish announcements on your website and hide them when they&#39;re no longer needed
  * Requires at least: 6.6
  * Requires PHP:      7.2
@@ -10,8 +10,8 @@
  * Author:            Aptex, Martin Staudt
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       apx-announcement
- * Domain Path:       apx-announcement
+ * Text Domain:       apx-gb-announcement
+ * Domain Path:       /languages
  *
  * @package Aptex
  */
@@ -34,7 +34,7 @@ function apx_announcement_block_init()
 add_action('init', 'apx_announcement_block_init');
 
 add_filter('load_script_translation_file', function (string $file, string $handle, string $domain) {
-	if (strpos($handle, 'apx-announcement') !== false && 'apx-announcement' === $domain) {
+	if (strpos($handle, 'apx-gb-announcement') !== false && 'apx-gb-announcement' === $domain) {
 		$file = str_replace(WP_LANG_DIR . '/plugins', plugin_dir_path(__FILE__) . 'languages', $file);
 	}
 	return $file;
@@ -43,7 +43,7 @@ add_filter('load_script_translation_file', function (string $file, string $handl
 function apx_load_plugin_textdomain()
 {
 	load_plugin_textdomain(
-		'apx-announcement',
+		'apx-gb-announcement',
 		false,
 		plugin_basename(__FILE__) . '/languages/'
 	);

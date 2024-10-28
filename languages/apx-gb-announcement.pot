@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Announcement 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/apx-announcement\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/apx-gb-announcement\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,25 +12,25 @@ msgstr ""
 "POT-Creation-Date: 2024-10-26T14:23:54+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
-"X-Domain: apx-announcement\n"
+"X-Domain: apx-gb-announcement\n"
 
 #. Plugin Name of the plugin
-#: apx-announcement.php
+#: apx-gb-announcement.php
 msgid "Announcement"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: apx-announcement.php
+#: apx-gb-announcement.php
 msgid "aptex.de"
 msgstr ""
 
 #. Description of the plugin
-#: apx-announcement.php
+#: apx-gb-announcement.php
 msgid "Publish announcements on your website and hide them when they&#39;re no longer needed"
 msgstr ""
 
 #. Author of the plugin
-#: apx-announcement.php
+#: apx-gb-announcement.php
 msgid "Aptex, Martin Staudt"
 msgstr ""
 

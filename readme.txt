@@ -1,4 +1,4 @@
-=== Announcement ===
+=== Announcement Block for Gutenberg ===
 Contributors:      Aptex, Martin Staudt
 Tags:              block
 Tested up to:      6.6
@@ -6,50 +6,49 @@ Stable tag:        0.1.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Publish announcements on your website and hide them when they&#39;re no longer needed
+Publish announcements on your website and hide them when they're no longer needed
 
 == Description ==
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+This plugin provides a Gutenberg block that allows website administrators to easily create and display announcements on their WordPress website. The block supports formatted text content and offers customizable styling options.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+The plugin offers two key features:
+- **Show Announcement Toggle:** Allows the user to manually control the visibility of the announcement.
+- **Automatic Expiration:** Automatically hides the announcement after a set date.
+
+== Features ==
+- **Custom Gutenberg Block:** Easily add announcements to your posts or pages with a dedicated block.
+- **Formatted Text Support:** Add formatted text content to your announcement.
+- **Custom Styling:** Style your announcement block to match your website's design.
+- **Show/Hide Toggle:** Manually control the announcement visibility from the block settings.
+- **Automatic Expiration:** Set a date after which the announcement automatically disappears from the website.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload the plugin files to the `/wp-content/plugins/apx-announcement` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-
-
-== Frequently Asked Questions ==
-
-= A question that someone might have =
-
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. Upload the plugin files to the `/wp-content/plugins/apx-gb-announcement` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Create a new post or page, or edit an existing one.
+4. Add the **Announcement Block** to the Gutenberg editor.
+5. Configure your announcement text, visibility options, and styling preferences.
 
 == Changelog ==
 
 = 0.1.0 =
 * Release
 
-== Arbitrary section ==
+## Frequently Asked Questions
 
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+**Q: How can I manually hide or show the announcement?**  
+A: You can toggle the "Show Announcement" setting in the block options to manually control its visibility.
+
+**Q: Can I schedule announcements to automatically expire?**  
+A: Yes, the plugin offers an "Automatic Expiration" option that allows you to set a date for the announcement to automatically disappear.
+
+**Q: Is it possible to style the announcement block?**  
+A: Yes, the block comes with several styling options that allow you to customize the appearance of the announcement to match your website’s design.
+
+## License
+This plugin is licensed under the GPLv2 or later.
+
+## Credits
+Developed by [Aptex - #WirMachenSoftware](https://aptex.de/wordpress).

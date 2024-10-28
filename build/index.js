@@ -77,23 +77,23 @@ function Edit({
     }
   };
   const isHidden = !show || useExpiryDate && new Date() > new Date(hideAfterDateTime);
-  const isHiddenClass = isHidden ? 'apx-announcement-is-hidden' : '';
+  const isHiddenClass = isHidden ? 'apx-gb-announcement-is-hidden' : '';
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Announcement Settings', 'apx-announcement'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Announcement Settings', 'apx-gb-announcement'),
         initialOpen: true,
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Announcement', 'apx-announcement'),
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Show Announcement', 'apx-gb-announcement'),
           checked: show,
           onChange: onToggleShow
         }), show && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Automatic Expiration', 'apx-announcement'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Automatic Expiration', 'apx-gb-announcement'),
             checked: useExpiryDate,
             onChange: onToggleUseExpiryDate
           }), useExpiryDate && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.DateTimePicker, {
-            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Hide After Date', 'apx-announcement'),
+            label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Hide After Date', 'apx-gb-announcement'),
             currentDate: hideAfterDateTime,
             onChange: onDateTimeChange,
             is12Hour: false
@@ -127,7 +127,7 @@ function Edit({
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("path", {
               d: "M3 3l18 18"
             })]
-          }), " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('hidden', 'apx-announcement')]
+          }), " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('hidden', 'apx-gb-announcement')]
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         identifier: "content",
@@ -135,7 +135,7 @@ function Edit({
         ...blockProps,
         value: content,
         onChange: onChangeContent,
-        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Write your announcement here...', 'apx-announcement')
+        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Write your announcement here...', 'apx-gb-announcement')
       })]
     })]
   });
@@ -319,7 +319,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"aptex/apx-announcement","version":"0.1.0","title":"Announcement","category":"widgets","icon":"megaphone","description":"Publish announcements on your website and hide them when they\'re no longer needed","example":{},"supports":{"__experimentalBorder":{"color":true,"radius":true,"style":true,"width":true},"color":{"gradients":true,"link":true,"__experimentalDefaultControls":{"background":true,"text":true}},"spacing":{"margin":true,"padding":true,"__experimentalDefaultControls":{"margin":false,"padding":false}},"typography":{"fontSize":true,"lineHeight":true,"__experimentalFontFamily":true,"__experimentalTextDecoration":true,"__experimentalFontStyle":true,"__experimentalFontWeight":true,"__experimentalLetterSpacing":true,"__experimentalTextTransform":true,"__experimentalWritingMode":true,"__experimentalDefaultControls":{"fontSize":true}}},"attributes":{"show":{"type":"boolean","default":true},"hideAfterDateTime":{"type":"string","default":""},"content":{"type":"rich-text","source":"rich-text","selector":"p","role":"content"},"useExpiryDate":{"type":"boolean","default":false}},"textdomain":"apx-announcement","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"aptex/apx-gb-announcement","version":"0.1.0","title":"Announcement","category":"widgets","icon":"megaphone","description":"Publish announcements on your website and hide them when they\'re no longer needed","example":{},"supports":{"__experimentalBorder":{"color":true,"radius":true,"style":true,"width":true},"color":{"gradients":true,"link":true,"__experimentalDefaultControls":{"background":true,"text":true}},"spacing":{"margin":true,"padding":true,"__experimentalDefaultControls":{"margin":false,"padding":false}},"typography":{"fontSize":true,"lineHeight":true,"__experimentalFontFamily":true,"__experimentalTextDecoration":true,"__experimentalFontStyle":true,"__experimentalFontWeight":true,"__experimentalLetterSpacing":true,"__experimentalTextTransform":true,"__experimentalWritingMode":true,"__experimentalDefaultControls":{"fontSize":true}}},"attributes":{"show":{"type":"boolean","default":true},"hideAfterDateTime":{"type":"string","default":""},"content":{"type":"rich-text","source":"rich-text","selector":"p","role":"content"},"useExpiryDate":{"type":"boolean","default":false}},"textdomain":"apx-gb-announcement","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 
