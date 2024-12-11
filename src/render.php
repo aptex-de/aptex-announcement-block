@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 $show = isset($attributes['show']) ? $attributes['show'] : true;
 $hide_after_date_time = isset($attributes['hideAfterDateTime']) ? $attributes['hideAfterDateTime'] : '';

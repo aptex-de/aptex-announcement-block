@@ -10,7 +10,7 @@
  * Author:            Aptex, Martin Staudt
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       apx-gb-announcement
+ * Text Domain:       aptex-announcement
  * Domain Path:       /languages
  *
  * @package Aptex
@@ -27,25 +27,25 @@ if (! defined('ABSPATH')) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function apx_announcement_block_init()
+function aptex_announcement_block_init()
 {
 	register_block_type(__DIR__ . '/build');
 }
-add_action('init', 'apx_announcement_block_init');
+add_action('init', 'aptex_announcement_block_init');
 
 add_filter('load_script_translation_file', function (string $file, string $handle, string $domain) {
-	if (strpos($handle, 'apx-gb-announcement') !== false && 'apx-gb-announcement' === $domain) {
+	if (strpos($handle, 'aptex-announcement') !== false && 'aptex-announcement' === $domain) {
 		$file = str_replace(WP_LANG_DIR . '/plugins', plugin_dir_path(__FILE__) . 'languages', $file);
 	}
 	return $file;
 }, 10, 3);
 
-function apx_load_plugin_textdomain()
+function aptex_announcement_block_load_plugin_textdomain()
 {
 	load_plugin_textdomain(
-		'apx-gb-announcement',
+		'aptex-announcement',
 		false,
 		plugin_basename(__FILE__) . '/languages/'
 	);
 }
-add_action('plugins_loaded', 'apx_load_plugin_textdomain');
+add_action('plugins_loaded', 'aptex_announcement_block_load_plugin_textdomain');

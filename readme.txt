@@ -1,4 +1,4 @@
-=== Announcement Block for Gutenberg ===
+=== Announcement Block ===
 Contributors:      Aptex, Martin Staudt
 Tags:              block
 Tested up to:      6.6
@@ -16,6 +16,8 @@ The plugin offers two key features:
 - **Show Announcement Toggle:** Allows the user to manually control the visibility of the announcement.
 - **Automatic Expiration:** Automatically hides the announcement after a set date.
 
+The full source code of the plugin is available on github: [https://github.com/aptex-de/aptex-announcement-block](https://github.com/aptex-de/aptex-announcement-block)
+
 == Features ==
 - **Custom Gutenberg Block:** Easily add announcements to your posts or pages with a dedicated block.
 - **Formatted Text Support:** Add formatted text content to your announcement.
@@ -25,7 +27,7 @@ The plugin offers two key features:
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/apx-gb-announcement` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/aptex-announcement` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Create a new post or page, or edit an existing one.
 4. Add the **Announcement Block** to the Gutenberg editor.
