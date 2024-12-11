@@ -3,10 +3,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Announcement 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/aptex-"
-"announcement\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/announcement-"
+"block\n"
 "POT-Creation-Date: 2024-10-26T14:23:54+00:00\n"
-"PO-Revision-Date: 2024-10-26 16:26+0200\n"
+"PO-Revision-Date: 2024-12-11 09:59+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.5\n"
-"X-Domain: aptex-announcement\n"
+"X-Domain: announcement-block\n"
 
 #. Plugin Name of the plugin
 #: aptex-announcement.php

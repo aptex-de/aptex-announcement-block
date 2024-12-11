@@ -10,7 +10,7 @@
  * Author:            Aptex, Martin Staudt
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       aptex-announcement
+ * Text Domain:       announcement-block
  * Domain Path:       /languages
  *
  * @package Aptex
@@ -34,7 +34,7 @@ function aptex_announcement_block_init()
 add_action('init', 'aptex_announcement_block_init');
 
 add_filter('load_script_translation_file', function (string $file, string $handle, string $domain) {
-	if (strpos($handle, 'aptex-announcement') !== false && 'aptex-announcement' === $domain) {
+	if (strpos($handle, 'announcement-block') !== false && 'announcement-block' === $domain) {
 		$file = str_replace(WP_LANG_DIR . '/plugins', plugin_dir_path(__FILE__) . 'languages', $file);
 	}
 	return $file;
@@ -43,7 +43,7 @@ add_filter('load_script_translation_file', function (string $file, string $handl
 function aptex_announcement_block_load_plugin_textdomain()
 {
 	load_plugin_textdomain(
-		'aptex-announcement',
+		'announcement-block',
 		false,
 		plugin_basename(__FILE__) . '/languages/'
 	);
